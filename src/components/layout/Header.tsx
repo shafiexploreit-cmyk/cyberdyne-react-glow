@@ -9,6 +9,7 @@ const navLinks = [
   { label: "Company", path: "/company" },
   { label: "Services", path: "/services" },
   { label: "Clients", path: "/clients" },
+  { label: "Team", path: "/team" },
   { label: "Demo", path: "/demo" },
   { label: "Contact", path: "/contact" },
 ];
@@ -41,7 +42,7 @@ const Header = () => {
               C
             </div>
             <span className="font-display font-bold text-lg text-foreground hidden sm:block">
-              Cyberdyne Tech
+              Cyberdyne Technology Limited
             </span>
           </Link>
 

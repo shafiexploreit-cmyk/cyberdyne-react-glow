@@ -73,7 +73,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-white/40">
             <li className="flex items-start gap-2.5">
               <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-primary/70" />
-              House 24, Road 7, Block C, Banasree, Dhaka-1219
+              House# 1/6/1(2nd Floor & 4th Floor), Road# 01 Tolarbag, Dhaka 1216
             </li>
             <li className="flex items-center gap-2.5">
               <Phone className="h-4 w-4 shrink-0 text-primary/70" />

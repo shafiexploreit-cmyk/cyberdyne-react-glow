@@ -99,7 +99,7 @@ const Contact = () => {
             className="space-y-5"
           >
             {[
-              { icon: MapPin, label: "Address", value: "House 24, Road 7, Block C, Banasree, Dhaka-1219, Bangladesh", gradient: "from-blue-500 to-indigo-600" },
+              { icon: MapPin, label: "Address", value: "House# 1/6/1(2nd Floor & 4th Floor), Road# 01 Tolarbag, Dhaka 1216, Bangladesh", gradient: "from-blue-500 to-indigo-600" },
               { icon: Phone, label: "Phone", value: "+880-1711-221122", gradient: "from-emerald-500 to-teal-500" },
               { icon: Mail, label: "Email", value: "info@cyberdynetechnologyltd.com", gradient: "from-orange-500 to-amber-500" },
               { icon: Clock, label: "Hours", value: "Sun–Thu: 9 AM – 6 PM", gradient: "from-violet-500 to-purple-600" },

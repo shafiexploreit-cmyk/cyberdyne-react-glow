@@ -4,6 +4,7 @@ import MarqueeBanner from "@/components/home/MarqueeBanner";
 import IntroSection from "@/components/home/IntroSection";
 import ServicesOverview from "@/components/home/ServicesOverview";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
+import CTABanner from "@/components/home/CTABanner";
 
 const Index = () => (
   <Layout>
@@ -12,6 +13,7 @@ const Index = () => (
     <IntroSection />
     <ServicesOverview />
     <TestimonialsSection />
+    <CTABanner />
   </Layout>
 );
 

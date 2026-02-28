@@ -88,6 +88,7 @@ const Team = () => {
                         src={leader.image}
                         alt={leader.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        style={leader.role === "Managing Director" ? { objectPosition: "right" } : undefined}
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-muted-foreground">

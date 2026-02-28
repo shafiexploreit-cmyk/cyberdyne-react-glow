@@ -110,7 +110,7 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 backdrop-blur-sm">
+              <Button asChild variant="outline" size="lg" className="border-white/20 bg-white text-black hover:bg-white/90 backdrop-blur-sm">
                 <Link to="/contact">Get in Touch</Link>
               </Button>
             </div>

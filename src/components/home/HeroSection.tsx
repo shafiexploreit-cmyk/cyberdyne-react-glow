@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import VibrantBackground from "./VibrantBackground";
 
 const slides = [
   {
@@ -47,37 +48,8 @@ const HeroSection = () => {
   const next = () => setCurrent((p) => (p + 1) % slides.length);
 
   return (
-    <section className="relative overflow-hidden bg-navy min-h-[85vh] flex items-center">
-      {/* Animated mesh gradient background */}
-      <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background:
-              "radial-gradient(circle at 20% 20%, hsl(220 70% 45% / 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 80%, hsl(170 60% 40% / 0.3) 0%, transparent 50%), radial-gradient(circle at 50% 50%, hsl(35 90% 55% / 0.15) 0%, transparent 60%)",
-          }}
-        />
-        {/* Grid lines */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
-
-      {/* Floating geometric shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[15%] right-[10%] w-72 h-72 rounded-full border border-white/[0.06] animate-float" />
-        <div className="absolute top-[60%] right-[25%] w-40 h-40 rounded-full border border-primary/10 animate-float-slow" />
-        <div className="absolute top-[30%] right-[5%] w-20 h-20 rounded-lg border border-accent/10 rotate-45 animate-float-fast" />
-        <div className="absolute bottom-[20%] left-[60%] w-32 h-32 rounded-full bg-primary/[0.04] animate-pulse-glow" />
-        <div className="absolute top-[10%] left-[70%] w-16 h-16 rounded-full bg-accent/[0.06] animate-float-slow" />
-        {/* Large glow orb */}
-        <div className="absolute top-1/2 right-[15%] -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-primary/10 to-accent/5 blur-[100px]" />
-      </div>
+    <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+      <VibrantBackground />
 
       <div className="container relative z-10 py-20">
         <AnimatePresence mode="wait">

@@ -5,11 +5,34 @@ import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTABanner = () => (
     <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-[#0a0f1e]" />
         {/* Decorative elements */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-            <div className="absolute top-[20%] left-[10%] w-64 h-64 rounded-full bg-primary/10 blur-[80px]" />
-            <div className="absolute bottom-[20%] right-[10%] w-64 h-64 rounded-full bg-accent/10 blur-[80px]" />
+            <motion.div
+                animate={{
+                    scale: [1, 1.2, 1],
+                    opacity: [0.1, 0.2, 0.1],
+                }}
+                transition={{
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                }}
+                className="absolute top-[20%] left-[10%] w-96 h-96 rounded-full bg-primary blur-[100px]"
+            />
+            <motion.div
+                animate={{
+                    scale: [1, 1.3, 1],
+                    opacity: [0.1, 0.15, 0.1],
+                }}
+                transition={{
+                    duration: 12,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                    delay: 1,
+                }}
+                className="absolute bottom-[20%] right-[10%] w-[500px] h-[500px] rounded-full bg-accent blur-[120px]"
+            />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full border border-white/[0.03]" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full border border-white/[0.02]" />
         </div>

@@ -41,9 +41,21 @@ const AnimatedCounter = ({ value, suffix }: { value: number; suffix: string }) =
 
 const IntroSection = () => (
   <section className="py-24 relative overflow-hidden">
-    {/* Subtle background */}
-    <div className="absolute inset-0 pointer-events-none">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/[0.03] blur-[100px]" />
+    {/* Vibrant background */}
+    <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
+    <div className="absolute inset-0 pointer-events-none overflow-hidden">
+      <motion.div
+        animate={{
+          scale: [1, 1.1, 1],
+          opacity: [0.03, 0.08, 0.03],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-primary blur-[120px]"
+      />
     </div>
 
     <div className="container relative">
